@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Layout from "../../components/layout";
 
 export default function FirstPost() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>First post</title>
       </Head>
@@ -13,6 +14,6 @@ export default function FirstPost() {
       <Link href="/">Return to home page</Link>
 
       <Image src="/images/avatar.png" width="150" height="150" alt="avatar" />
-    </div>
+    </Layout>
   );
 }
